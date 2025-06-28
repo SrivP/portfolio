@@ -2,9 +2,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 function Backdrop(props: { children: any; onClick: any; }) {
-    let children= props.children;
     let onClick = props.onClick;
-    const [modal, setModal] = useState(false);
+    const [modal] = useState(false);
     const [glowcolor, setGlowColor] = useState("rgba(175, 43, 191, 1)")
         const Glow = new Map();
         Glow.set(1, "rgba(175, 43, 191, 1)")

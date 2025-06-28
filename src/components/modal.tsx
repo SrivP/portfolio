@@ -2,7 +2,6 @@ import Backdrop from "./backdrop";
 import { motion } from "framer-motion";
 function Modal(props: { handleClose: any; modalOpen: any; }) {
     let handleClose = props.handleClose;
-    let  modalOpen = props.modalOpen;
     
     return(
         <Backdrop onClick={handleClose}>
